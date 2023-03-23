@@ -1,0 +1,748 @@
+button,
+input,
+textarea,
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.adapt-menu {
+  display: none;
+}
+
+.btn {
+  padding: 5px 30px;
+  display: inline-block;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  &-red {
+    background-color: $red-color;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-green {
+    background-color: rgb(177, 213, 24);
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-yellow {
+    background-color: rgb(255, 167, 33);
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-white {
+    background-color: #fff;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-primary {
+    background-color: $primary;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-grey {
+    background-color: rgb(21, 32, 4);
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-orange {
+    background-color: #ff5000;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+body {
+  background-color: #fff;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  font-family: KozGoPro_Light;
+  font-size: 16px;
+}
+
+// Top nav menu
+.top-nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // position: fixed;
+  // z-index: 1550;
+  // top: 0;
+  position: relative;
+  &_button {
+    display: none;
+    width: 110px;
+    height: 72px;
+    background-color: $active-color;
+    position: absolute;
+    right: 0;
+    top: -72px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &-circle {
+      width: 50px;
+      height: 50px;
+      border: 2px solid white;
+      border-radius: 50%;
+      background-color: $active-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
+      & i {
+        color: white;
+      }
+    }
+  }
+  &_logo {
+    font-family: KozGoPro_Bold;
+    color: $primary;
+    font-size: 36px;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  &_menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    &__active {
+      color: $active-color !important;
+    }
+    li {
+      margin-right: 25px;
+      & a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $nav-menu-text;
+        font-family: KozGoPro_Bold;
+        font-size: 18px;
+        &:hover {
+          color: $active-color;
+        }
+      }
+    }
+  }
+  &_user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    & img {
+      width: 42px;
+      height: 42px;
+    }
+    & h3 {
+      font-family: KozGoPro_Bold;
+      font-size: 20px;
+      margin-left: 7px;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.slider {
+  background: linear-gradient(0.25turn, $primary, #dadc55);
+  height: 650px;
+
+  &-block {
+    padding-top: 80px;
+    position: relative;
+    & img {
+      position: absolute;
+      left: 0;
+      z-index: 1;
+    }
+    &_content {
+      position: absolute;
+      right: 0;
+      top: 12rem;
+      color: white;
+      text-align: right;
+      z-index: 5;
+      & h1 {
+        font-size: 2.8rem;
+        font-family: KozGoPro_Bold;
+        margin: 0;
+        text-shadow: 2px 2px $text-color;
+      }
+      & h2 {
+        font-size: 1.7rem;
+        margin: 0;
+        text-shadow: 2px 2px $text-color;
+      }
+      & a {
+        text-decoration: none;
+      }
+      .btn {
+        padding: 5px 40px;
+        display: inline-block;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        font-size: 26px;
+        margin-top: 80px;
+        &-warning {
+          background-color: $active-color;
+          &:hover {
+            background-color: lighten($active-color, 2%);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Slider
+.slick-slide {
+  height: 650px;
+}
+
+.slick-next {
+  position: absolute;
+  right: -85px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  outline: none;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(315deg);
+}
+.slick-prev {
+  position: absolute;
+  left: -85px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  outline: none;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(135deg);
+}
+.slick-next:before {
+  content: "";
+}
+.slick-prev:before {
+  content: "";
+}
+
+// Content
+
+// Block1
+.content {
+  margin-top: 67px;
+  //   block1
+  &-block1 {
+    margin-bottom: 95px;
+    & h1 {
+      font-size: 35px;
+      font-family: KozGoPro_Medium;
+      color: $active-color;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 35px;
+      &_primary {
+        background-color: $primary;
+      }
+      &_orange {
+        background-color: rgb(255, 182, 50);
+      }
+      &_green {
+        background-color: rgb(25, 254, 161);
+      }
+      &_grey {
+        background-color: rgb(72, 98, 111);
+      }
+      &_yellow {
+        background-color: rgb(254, 241, 2);
+      }
+      &_aqua {
+        background-color: rgb(1, 181, 158);
+      }
+      &_img {
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      &_h {
+        flex-direction: column;
+        color: white;
+        font-family: KozGoPro_Light;
+        text-transform: uppercase;
+        & h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+          font-family: KozGoPro_Bold;
+        }
+        & h3 {
+          font-size: 20px;
+        }
+        & h4 {
+          font-size: 18px;
+          text-transform: none;
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+        }
+        &_text-black {
+          & h2 {
+            color: $text-color;
+            font-family: KozGoPro_Bold;
+          }
+          & h3 {
+            color: $text-color;
+          }
+        }
+        &_text-heavy {
+          & h2 {
+            font-family: KozGoPro_Bold;
+          }
+        }
+        &__items {
+          flex-direction: row;
+          position: relative;
+          &-point {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  //   block2
+  &-block2 {
+    margin-bottom: 55px;
+    padding: 55px 55px 75px 55px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    & h1 {
+      font-size: 35px;
+      font-family: KozGoPro_Medium;
+      color: $red-color;
+      text-align: center;
+    }
+    &-item {
+      display: flex;
+      margin-top: 50px;
+      &_img {
+        width: 98px;
+        height: 87px;
+        background-color: $primary;
+        border-radius: 10px;
+        padding: 20px 28px;
+        margin-right: 20px;
+        &_pink {
+          background-color: rgb(255, 65, 129);
+        }
+      }
+      &_h {
+        flex-direction: column;
+        color: $text-color;
+        text-transform: uppercase;
+        & h2 {
+          font-size: 26px;
+          font-family: KozGoPro_Medium;
+        }
+        & h3 {
+          margin-left: 10px;
+          font-size: 20px;
+          font-family: KozGoPro_Light;
+        }
+        &__items {
+          & h3 {
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.75;
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              background-color: $text-color;
+              border-radius: 50%;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //   block3
+  &-block3 {
+    margin-bottom: 55px;
+    background-color: $red-color;
+    padding: 65px 0 85px 0;
+    color: #fff;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    & p {
+      font-size: 22px;
+      line-height: 1.864;
+    }
+  }
+  //   block4
+  &-block4 {
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: $red-color;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: $red-color;
+    }
+    &-item {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_card {
+        background-color: #fff;
+        text-align: center;
+        margin-bottom: 60px;
+        min-height: 522px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        & img {
+          width: 100%;
+        }
+        &-content {
+          margin-top: -85px;
+          padding-left: 10px;
+          padding-right: 10px;
+          &-img {
+            padding: 15px 25px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            & img {
+              width: 45px;
+              height: 50px;
+            }
+          }
+          & h3 {
+            font-size: 20px;
+            color: $primary;
+            font-family: KozGoPro_Bold;
+            margin-bottom: 10px;
+          }
+          & p {
+            font-size: 16px;
+            line-height: 1.563;
+          }
+          & a {
+            text-transform: none;
+          }
+        }
+        a {
+          width: 130px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  //   Block5
+  &-block5 {
+    background-image: url(../img/block5/block5-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: white;
+    }
+    &-item {
+      background-color: #fff;
+      border-radius: 5px;
+      display: flex;
+      margin-bottom: 25px;
+      & img {
+        min-height: 280px;
+      }
+      &_content {
+        padding: 20px 20px 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & h3 {
+          font-size: 24px;
+          font-family: KozGoPro_Medium;
+          color: $primary;
+          margin-bottom: 10px;
+        }
+        & h4 {
+          font-size: 16px;
+          line-height: 1.75;
+          margin-bottom: 2rem;
+        }
+        a {
+          width: 130px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &-btn {
+      text-align: center;
+      a {
+        width: 250px;
+        font-size: 24px;
+        color: $red-color;
+        text-align: center;
+        font-family: KozGoPro_Medium;
+      }
+    }
+  }
+  //   Block 6
+  &-block6 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: $active-color;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: $active-color;
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      border: 2px dotted rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      margin-bottom: 25px;
+      & h3 {
+        color: $active-color;
+        font-size: 20px;
+        line-height: 1.6;
+        font-family: KozGoPro_Medium;
+        margin-right: 70px;
+      }
+      & button {
+        width: 40px;
+        height: 35px;
+        background-color: $text-color;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        & i {
+          color: white;
+          margin-top: 5px;
+        }
+      }
+    }
+    &-item_none {
+      display: none;
+      padding: 20px;
+      transition: ease-in;
+      &__active {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  //   Block7
+  &-block7 {
+    background-color: #b1d518;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    & h1 {
+      font-size: 36px;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    & h2 {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 45px;
+      color: #fff;
+    }
+    &-item {
+      background-color: #fff;
+      display: flex;
+      margin-bottom: 7px;
+      padding: 20px 35px;
+      & h4 {
+        color: $primary;
+        font-size: 18px;
+        font-family: KozGoPro_Bold;
+        margin-right: 60px;
+      }
+      & h5 {
+        font-size: 18px;
+      }
+    }
+    &-btn {
+      text-align: center;
+      margin-top: 25px;
+      a {
+        font-size: 25px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// footer
+.footer {
+  padding: 90px 30px 40px 30px;
+  background-image: url(../img/footer-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #929497;
+  & h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  & li {
+    margin-bottom: 14px;
+  }
+  a {
+    color: #929497;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  &_menu {
+    display: flex;
+    flex-direction: column;
+    & a {
+      display: flex;
+      align-items: center;
+      & img {
+        margin-right: 15px;
+      }
+      & span {
+        font-size: 20px;
+        color: #cacbcc;
+        text-transform: uppercase;
+        font-family: KozGoPro_Bold;
+      }
+    }
+  }
+}

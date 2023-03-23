@@ -1,0 +1,134 @@
+// News
+.news_1 {
+    margin-bottom: 70px;
+    h1 {
+      font-size: 38px;
+      color: $red-color;
+      font-family: KozGoPro_Bold;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &-card {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      margin-bottom: 50px;
+      img {
+        width: 100%;
+      }
+      &_grey {
+        border-bottom: 3px solid rgb(21, 32, 4);
+      }
+      &_orange {
+        border-bottom: 3px solid #ff5000;
+      }
+      &_red {
+        border-bottom: 3px solid $red-color;
+      }
+      &_yellow {
+        border-bottom: 3px solid rgb(255, 167, 33);
+      }
+      &_primary {
+        border-bottom: 3px solid $primary;
+      }
+      &_green {
+        border-bottom: 3px solid rgb(177, 213, 24);
+      }
+      &__content {
+        padding: 10px 30px 25px 30px;
+        h3 {
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+        &-icon {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+          img {
+            width: 23px;
+            margin-right: 15px;
+          }
+          span {
+            font-size: 14px;
+          }
+        }
+        p {
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    &-pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #15202c;
+      margin-bottom: 60px;
+      &_numbers {
+        display: flex;
+        &_active {
+          background-color: $primary !important;
+        }
+        a {
+          margin-right: 15px;
+          color: white;
+          align-items: center;
+          display: flex;
+          padding: 0 12px;
+          background-color: #fff;
+          border-radius: 5px;
+          font-family: KozGoPro_Bold;
+          text-decoration: none;
+          color: #15202c;
+          font-size: 18px;
+          &:hover {
+            background-color: $primary;
+          }
+        }
+        a:nth-last-child(1) {
+          background-color: transparent;
+          &:hover {
+            background-color: $primary;
+          }
+        }
+        a:nth-last-child(4) {
+          background-color: transparent;
+          &:hover {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+    &-content {
+      margin-bottom: 35px;
+      h1 {
+        font-size: 38px;
+        color: $red-color;
+        text-align: center;
+        font-family: KozGoPro_Bold;
+      }
+      &-center {
+        display: flex;
+        justify-content: center;
+        &-item {
+          border: 1px solid rgba(0, 0, 0, 0.4);
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          font-size: 18px;
+          margin-bottom: 20px;
+          h4 {
+            color: $primary;
+            font-family: KozGoPro_Bold;
+            margin-right: 35px;
+          }
+        }
+      }
+      &_btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
+  }
+  

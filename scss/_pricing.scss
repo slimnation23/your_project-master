@@ -1,0 +1,2069 @@
+.pricing {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 60px;
+  padding-top: 50px;
+  h1 {
+    color: $red-color;
+    text-align: center;
+  }
+}
+.pricing-grids {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  padding-bottom: 60px;
+  a {
+    font-size: 28px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+.grid1 {
+  display: grid;
+  grid-auto-rows: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "withoutText withoutText withoutText"
+    "whiteText whiteText whiteText"
+    "blueText1 blueText2 blueText4"
+    "blueText1 blueText2 blueText5"
+    "blueText1 blueText3 blueText6"
+    "blueText1 blueText3 blueText7"
+    "activeText1 activeText2 activeText5"
+    "activeText1 activeText2 activeText5"
+    "activeText1 activeText2 activeText6"
+    "activeText1 activeClear activeText7"
+    "activeText1 activeClear activeText8"
+    "activeText1 activeClear activeText8"
+    "activeText1 activeClear activeText9"
+    "activeText1 activeClear activeText10"
+    "activeText1 activeClear activeText10"
+    "activeText1 activeClear activeText11"
+    "activeText1 activeClear activeText12"
+    "activeText1 activeText3 activeText13"
+    "activeText1 activeClear2 activeText14"
+    "activeText1 activeClear2 activeText15"
+    "activeText1 activeText4 activeText16"
+    "activeText1 activeText4 activeText17"
+    "activeText1 activeText4 activeText18"
+    "orangeText1 orangeText2 orangeText2"
+    "orangeText1 orangeText3 orangeText3"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText4 orangeText4"
+    "orangeText1 orangeText5 orangeText5"
+    "greenText1 greenText2 greenText2"
+    "greenText1 greenText3 greenText3"
+    "greenText1 greenText4 greenText4"
+    "greenText1 greenText5 greenText5"
+    "greyText1 greyText3 greyText3"
+    "greyText2 greyText4 greyText4"
+    "greyText2 greyText5 greyText5"
+    "greyText2 greyText6 greyText6";
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.grid__white {
+  grid-area: withoutText;
+  height: 70px;
+  background: white;
+  color: $text-color;
+  border: 1px solid rgb(196, 196, 196);
+  border-left: 1px solid rgb(196, 196, 196);
+  border-top: 1px solid rgb(196, 196, 196);
+}
+
+.grid__whiteText {
+  grid-area: whiteText;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid rgb(196, 196, 196);
+  border-left: 1px solid rgb(196, 196, 196);
+  border-top: 1px solid rgb(196, 196, 196);
+}
+
+.grid__blueText {
+  grid-area: blueText;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText1 {
+  grid-area: blueText1;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText2 {
+  grid-area: blueText2;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText3 {
+  grid-area: blueText3;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText4 {
+  grid-area: blueText4;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText5 {
+  grid-area: blueText5;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText6 {
+  grid-area: blueText6;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__blueText7 {
+  grid-area: blueText7;
+  height: 100%;
+  background: $primary;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText1 {
+  grid-area: activeText1;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.grid__activeText2 {
+  grid-area: activeText2;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText3 {
+  grid-area: activeText3;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText4 {
+  grid-area: activeText4;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText5 {
+  grid-area: activeText5;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText6 {
+  grid-area: activeText1;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText6 {
+  grid-area: activeText6;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText7 {
+  grid-area: activeText7;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText8 {
+  grid-area: activeText8;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText9 {
+  grid-area: activeText9;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText10 {
+  grid-area: activeText10;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText11 {
+  grid-area: activeText11;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText12 {
+  grid-area: activeText12;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText13 {
+  grid-area: activeText13;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText14 {
+  grid-area: activeText14;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText15 {
+  grid-area: activeText15;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText16 {
+  grid-area: activeText16;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText17 {
+  grid-area: activeText17;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeText18 {
+  grid-area: activeText18;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeClear {
+  grid-area: activeClear;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__activeClear2 {
+  grid-area: activeClear2;
+  height: 100%;
+  background: $active-color;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText1 {
+  grid-area: orangeText1;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText2 {
+  grid-area: orangeText2;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText3 {
+  grid-area: orangeText3;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText4 {
+  grid-area: orangeText4;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__orangeText5 {
+  grid-area: orangeText5;
+  height: 100%;
+  background: #ffa41b;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText1 {
+  grid-area: greenText1;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText2 {
+  grid-area: greenText2;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText3 {
+  grid-area: greenText3;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText4 {
+  grid-area: greenText4;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greenText5 {
+  grid-area: greenText5;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText1 {
+  grid-area: greyText1;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText2 {
+  grid-area: greyText2;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText3 {
+  grid-area: greyText3;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText4 {
+  grid-area: greyText4;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText5 {
+  grid-area: greyText5;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+.grid__greyText6 {
+  grid-area: greyText6;
+  height: 100%;
+  background: #15212d;
+  color: white;
+  border: 1px solid white;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+// Grid2
+.grid2 {
+  display: grid;
+  grid-auto-rows: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "white1 white2 white3"
+    "white4 white5 white6"
+    "white7 white8 white9"
+    "white10 white11 white12"
+    "white13 white14 white15"
+    "white16 white17 white18"
+    "white19 white20 white21"
+    "white19 white20 white21"
+    "white22 white23 white21"
+    "white24 white25 white21"
+    "white26 white27 white21"
+    "white26 white27 white21"
+    "white28 white29 white21"
+    "white30 white31 white21"
+    "white30 white31 white21"
+    "white32 white33 white21"
+    "white34 white35 white21"
+    "white36 white37 white38"
+    "white39 white40 white41"
+    "white42 white43 white44"
+    "white45 white46 white47"
+    "white48 white49 white50"
+    "white51 white52 white53"
+    "white54 white55 white56"
+    "white57 white58 white59"
+    "white60 white61 white62"
+    "white63 white64 white65"
+    "white66 white67 white68"
+    "white69 white70 white71"
+    "white72 white73 white74"
+    "white75 white76 white77"
+    "white78 white79 white80"
+    "white81 white82 white83"
+    "white84 white85 white86"
+    "white87 white88 white89"
+    "white90 white91 white92"
+    "white93 white93 white93"
+    "white94 white94 white94"
+    "white95 white95 white95";
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "有在庫";
+    top: -50px;
+    color: white;
+    font-size: 22px;
+    font-family: KozGoPro_Medium;
+    height: 0;
+    width: 100%;
+    border-bottom: 50px solid #b1d519;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+}
+
+.grid__bgWhite1 {
+  grid-area: white1;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite2 {
+  grid-area: white2;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+
+.grid__bgWhite3 {
+  grid-area: white3;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite4 {
+  grid-area: white4;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite5 {
+  grid-area: white5;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite6 {
+  grid-area: white6;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite7 {
+  grid-area: white7;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite8 {
+  grid-area: white8;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite9 {
+  grid-area: white9;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite10 {
+  grid-area: white10;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite11 {
+  grid-area: white11;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite12 {
+  grid-area: white12;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite13 {
+  grid-area: white13;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite14 {
+  grid-area: white14;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite15 {
+  grid-area: white15;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite16 {
+  grid-area: white16;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite17 {
+  grid-area: white17;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite18 {
+  grid-area: white18;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite19 {
+  grid-area: white19;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite20 {
+  grid-area: white20;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite21 {
+  grid-area: white21;
+  height: 100%;
+  background: #b1d519;
+  color: white;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite22 {
+  grid-area: white22;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite23 {
+  grid-area: white23;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite24 {
+  grid-area: white24;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite25 {
+  grid-area: white25;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite26 {
+  grid-area: white26;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite27 {
+  grid-area: white27;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite28 {
+  grid-area: white28;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite29 {
+  grid-area: white29;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite30 {
+  grid-area: white30;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite31 {
+  grid-area: white31;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite32 {
+  grid-area: white32;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite33 {
+  grid-area: white33;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite34 {
+  grid-area: white34;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite35 {
+  grid-area: white35;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite36 {
+  grid-area: white36;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite37 {
+  grid-area: white37;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite38 {
+  grid-area: white38;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite39 {
+  grid-area: white39;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite40 {
+  grid-area: white40;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite41 {
+  grid-area: white41;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite42 {
+  grid-area: white42;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite43 {
+  grid-area: white43;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite44 {
+  grid-area: white44;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite45 {
+  grid-area: white45;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite46 {
+  grid-area: white46;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite47 {
+  grid-area: white47;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite48 {
+  grid-area: white48;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite49 {
+  grid-area: white49;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite50 {
+  grid-area: white50;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite51 {
+  grid-area: white51;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite52 {
+  grid-area: white52;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite53 {
+  grid-area: white53;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite54 {
+  grid-area: white54;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite55 {
+  grid-area: white55;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite56 {
+  grid-area: white56;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite57 {
+  grid-area: white57;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite58 {
+  grid-area: white58;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite59 {
+  grid-area: white59;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite60 {
+  grid-area: white60;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite61 {
+  grid-area: white61;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite62 {
+  grid-area: white62;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite63 {
+  grid-area: white63;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite64 {
+  grid-area: white64;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite65 {
+  grid-area: white65;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite66 {
+  grid-area: white66;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite67 {
+  grid-area: white67;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite68 {
+  grid-area: white68;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite69 {
+  grid-area: white69;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite70 {
+  grid-area: white70;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite71 {
+  grid-area: white71;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite72 {
+  grid-area: white72;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite73 {
+  grid-area: white73;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite74 {
+  grid-area: white74;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite75 {
+  grid-area: white75;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite76 {
+  grid-area: white76;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite77 {
+  grid-area: white77;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite78 {
+  grid-area: white78;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite79 {
+  grid-area: white79;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite80 {
+  grid-area: white80;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite81 {
+  grid-area: white81;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite82 {
+  grid-area: white82;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite83 {
+  grid-area: white83;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite84 {
+  grid-area: white84;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite85 {
+  grid-area: white85;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite86 {
+  grid-area: white86;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite87 {
+  grid-area: white87;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite88 {
+  grid-area: white88;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite89 {
+  grid-area: white89;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite90 {
+  grid-area: white90;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite91 {
+  grid-area: white91;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite92 {
+  grid-area: white92;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite93 {
+  grid-area: white93;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite94 {
+  grid-area: white94;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bgWhite95 {
+  grid-area: white95;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+
+// Grid3
+.grid3 {
+  display: grid;
+  grid-auto-rows: 70px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  grid-template-areas:
+    "_white1 _white2 _white3"
+    "_white4 _white5 _white6"
+    "_white7 _white8 _white9"
+    "_white10 _white11 _white12"
+    "_white13 _white14 _white15"
+    "_white16 _white17 _white18"
+    "_white19 _white20 _white21"
+    "_white19 _white20 _white21"
+    "_white22 _white23 _white24"
+    "_white25 _white26 _white27"
+    "_white28 _white29 _white30"
+    "_white28 _white29 _white30"
+    "_white31 _white32 _white33"
+    "_white34 _white35 _white36"
+    "_white34 _white35 _white36"
+    "_white37 _white38 _white39"
+    "_white40 _white41 _white42"
+    "_white43 _white44 _white45"
+    "_white46 _white47 _white48"
+    "_white49 _white50 _white51"
+    "_white52 _white53 _white54"
+    "_white55 _white56 _white57"
+    "_white58 _white59 _white60"
+    "_white61 _white62 _white63"
+    "_white64 _white65 _white66"
+    "_white67 _white68 _white69"
+    "_white67 _white68 _white69"
+    "_white67 _white68 _white69"
+    "_white67 _white68 _white69"
+    "_white67 _white68 _white69"
+    "_white70 _white71 _white72"
+    "_white73 _white74 _white75"
+    "_white76 _white77 _white78"
+    "_white79 _white80 _white81"
+    "_white82 _white83 _white84"
+    "_white85 _white86 _white87"
+    "_white88 _white88 _white88"
+    "_white89 _white89 _white89"
+    "_white90 _white90 _white90";
+  width: 30%;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "無在庫";
+    top: -50px;
+    color: white;
+    font-size: 22px;
+    font-family: KozGoPro_Medium;
+    height: 0;
+    width: 100%;
+    border-bottom: 50px solid #a5a5a5;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+}
+
+.grid__bg2White1 {
+  grid-area: _white1;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+  font-size: 15px;
+}
+.grid__bg2White2 {
+  grid-area: _white2;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+  font-size: 15px;
+}
+.grid__bg2White3 {
+  grid-area: _white3;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+  font-size: 15px;
+}
+.grid__bg2White4 {
+  grid-area: _white4;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White5 {
+  grid-area: _white5;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White6 {
+  grid-area: _white6;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White7 {
+  grid-area: _white7;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White8 {
+  grid-area: _white8;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White9 {
+  grid-area: _white9;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White10 {
+  grid-area: _white10;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+  font-size: 14px;
+}
+.grid__bg2White11 {
+  grid-area: _white11;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+  font-size: 14px;
+}
+.grid__bg2White12 {
+  grid-area: _white12;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+  font-size: 14px;
+}
+.grid__bg2White13 {
+  grid-area: _white13;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White14 {
+  grid-area: _white14;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White15 {
+  grid-area: _white15;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White16 {
+  grid-area: _white16;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White17 {
+  grid-area: _white17;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White18 {
+  grid-area: _white18;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White19 {
+  grid-area: _white19;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White20 {
+  grid-area: _white20;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White21 {
+  grid-area: _white21;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White22 {
+  grid-area: _white22;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White23 {
+  grid-area: _white23;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White24 {
+  grid-area: _white24;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White25 {
+  grid-area: _white25;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White26 {
+  grid-area: _white26;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White27 {
+  grid-area: _white27;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White28 {
+  grid-area: _white28;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White29 {
+  grid-area: _white29;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White30 {
+  grid-area: _white30;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White31 {
+  grid-area: _white31;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White32 {
+  grid-area: _white32;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White33 {
+  grid-area: _white33;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White34 {
+  grid-area: _white34;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White35 {
+  grid-area: _white35;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White36 {
+  grid-area: _white36;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White37 {
+  grid-area: _white37;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White38 {
+  grid-area: _white38;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White39 {
+  grid-area: _white39;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White40 {
+  grid-area: _white40;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White41 {
+  grid-area: _white41;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White42 {
+  grid-area: _white42;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White43 {
+  grid-area: _white43;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White44 {
+  grid-area: _white44;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White45 {
+  grid-area: _white45;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White46 {
+  grid-area: _white46;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White47 {
+  grid-area: _white47;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White48 {
+  grid-area: _white48;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White49 {
+  grid-area: _white49;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White50 {
+  grid-area: _white50;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White51 {
+  grid-area: _white51;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White52 {
+  grid-area: _white52;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White53 {
+  grid-area: _white53;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White54 {
+  grid-area: _white54;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White55 {
+  grid-area: _white55;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White56 {
+  grid-area: _white56;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White57 {
+  grid-area: _white57;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White58 {
+  grid-area: _white58;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White59 {
+  grid-area: _white59;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White60 {
+  grid-area: _white60;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White61 {
+  grid-area:_ white61;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White62 {
+  grid-area: _white62;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White63 {
+  grid-area: _white63;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White64 {
+  grid-area: _white64;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White65 {
+  grid-area: _white65;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White66 {
+  grid-area: _white66;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White67 {
+  grid-area: _white67;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White68 {
+  grid-area: _white68;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White69 {
+  grid-area: _white69;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White70 {
+  grid-area: _white70;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White71 {
+  grid-area: _white71;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White72 {
+  grid-area: _white72;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White73 {
+  grid-area: _white73;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White74 {
+  grid-area: _white74;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White75 {
+  grid-area: _white75;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White76 {
+  grid-area: _white76;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White77 {
+  grid-area: _white77;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White78 {
+  grid-area: _white78;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White79 {
+  grid-area: _white79;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White80 {
+  grid-area: _white80;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White81 {
+  grid-area: _white81;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White82 {
+  grid-area: _white82;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White83 {
+  grid-area: _white83;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White84 {
+  grid-area: _white84;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White85 {
+  grid-area: _white85;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White86 {
+  grid-area: _white86;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White87 {
+  grid-area: _white87;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White88 {
+  grid-area: _white88;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White89 {
+  grid-area: _white89;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+.grid__bg2White90 {
+  grid-area: _white90;
+  height: 100%;
+  background: white;
+  color: $text-color;
+  border: 1px solid #b1d519;
+}
+
+// Grid4
+.grid4 {
+  display: grid;
+  grid-auto-rows: 50px;
+  grid-template-columns: auto;
+  grid-gap: 0;
+  grid-template-areas:
+    "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
+    "red1 red2 red2 red2 red2 red2 red2 red2 red2 red2 red2"
+    "red1 red3 red4 red4 red4 red4 red4 red4 red5 red5 red5"
+    "red1 red3 red6 red6 red6 red6 red6 red6 red6 red6 red6"
+    "red1 red7 red8 red8 red8 red8 red8 red8 red9 red9 red9"
+    "red1 red7 red10 red10 red10 red10 red11 red11 red11 red11 red11"
+    "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13"
+    "red12 red13 red13 red13 red13 red13 red13 red13 red13 red13 red13";
+  width: 90%;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.grid__red1 {
+  grid-area: red1;
+  padding: 5px;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red2 {
+  padding: 5px;
+  grid-area: red2;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red3 {
+  padding: 5px;
+  grid-area: red3;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red4 {
+  padding: 5px;
+  grid-area: red4;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red5 {
+  padding: 5px;
+  grid-area: red5;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red6 {
+  padding: 5px;
+  grid-area: red6;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red7 {
+  padding: 5px;
+  grid-area: red7;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red8 {
+  padding: 5px;
+  grid-area: red8;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red9 {
+  padding: 5px;
+  grid-area: red9;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red10 {
+  padding: 5px;
+  grid-area: red10;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red11 {
+  padding: 5px;
+  grid-area: red11;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red12 {
+  padding: 5px;
+  grid-area: red12;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+.grid__red13 {
+  padding: 5px;
+  grid-area: red13;
+  height: 100%;
+  background: $red-color;
+  color: white;
+  border: 1px solid white;
+}
+
